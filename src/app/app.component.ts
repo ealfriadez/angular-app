@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
+import { CommonModule} from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-app';
+  title: string = 'Hola mundo angular 2024 desde componente...!';
+
+  users: string[] = ['Elio', 'Doris', 'Sebastian', 'Santiago', 'Moka'];
+
+  //users!: string[];
 }
