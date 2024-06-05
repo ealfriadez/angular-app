@@ -14,5 +14,10 @@ export class AppComponent {
 
   users: string[] = ['Elio', 'Doris', 'Sebastian', 'Santiago', 'Moka'];
 
-  //users!: string[];
+  visible: boolean = false;
+
+  setVisible(): void{
+    this.visible = this.visible? false: true;
+    console.log('Hemos hecho click en setVisible');
+  }
 }
